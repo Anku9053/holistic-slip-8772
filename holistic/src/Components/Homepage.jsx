@@ -1,5 +1,9 @@
-import { textDecoration } from '@chakra-ui/react'
+
 import React from 'react'
+import LargeWithNewsletter from "./Footer";
+import "./Homepage.css";
+import Footer from './Footer';
+import Slider from '../Slider/Slider';
 
 const Homepage = () => {
 
@@ -18,7 +22,7 @@ const Homepage = () => {
         gridTemplateColumns: 'repeat(5,1fr)',
         gap:"20px",
         padding:"10px",
-        width: "90%",
+        width: "95%",
         margin:"auto"
     }
 
@@ -26,6 +30,10 @@ const Homepage = () => {
       
         width: "100%",
         gap:"10px"
+    }
+    const Classname1_Heading = {
+        textDecorationLine: 'line-through', 
+        textDecorationStyle: 'solid'
     }
    
 
@@ -36,13 +44,17 @@ const Homepage = () => {
     return (
         <div>
             <h1>Homepage</h1>
-            <div>
-                <h1>We’re on a mission to inspire, enable & empower everyone to experience the outdoors & live their adventure.</h1>
+            <div style={{backgroundColor:"#f5f5f5"}}>
+                <h1 style={{fontSize:"26px",margin:"auto",width:"80%",textAlign:"center"}}>We’re on a mission to inspire, enable & empower everyone to experience the outdoors & live their adventure.</h1>
+                <div className='wehave'>
+                    <img src="https://www.bergans.com/pub_images/original/4583-14291_1.jpg?extend=copy&width=512&method=resize&type=webp&timestamp=1675684080" alt="" />
+                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/0290703_116Q1?$748V1$" alt="" />
+                </div>
             </div>
             <div>
                 <h1>Spring Adventures Are Calling!</h1>
-                <p>
-                    Outfit yourself with tech-enhanced essentials built for superior
+                <p style={{fontWeight:"600",fontSize:"15px", textAlign:"center"}}>
+                    Outfit yourself with tech-enhanced essentials built for superior <br />
                     performance in unpredictable conditions.</p>
             </div>
             <div style={Classname1}>
@@ -67,46 +79,48 @@ const Homepage = () => {
             <div style={{width:"80%",margin:"auto"}}>
                 <h1 style={{fontSize:"80px",textAlign:"center"}}>SALE <span style={{fontSize:"80px"}}>|</span> UPTO 40%</h1>
                <div >
-                <button style={{marginLeft:"40px",backgroundColor:"black",fontSize:"20px",color:"white",width:"180px",height:"40px"}}>Shop Women</button>
-                <button style={{marginLeft:"40px",backgroundColor:"black",fontSize:"20px",color:"white",width:"180px",height:"40px"}}>Shop Men</button>
-                <button style={{marginLeft:"40px",backgroundColor:"black",fontSize:"20px",color:"white",width:"180px",height:"40px"}}>Shop Kid</button>
-                <button style={{marginLeft:"40px",backgroundColor:"black",fontSize:"20px",color:"white",width:"180px",height:"40px"}}>Shop Houses</button>
+                <button className='example'>Shop Women</button>
+                <button className='example'>Shop Men</button>
+                <button className='example'>Shop Kid</button>
+                <button className='example'>Shop Houses</button>
                </div>
                
             </div>
 
 
-            <div style={{width:"60%",backgroundColor:"#cde2dd",margin:"auto"}}>
+            <div style={{width:"100%",backgroundColor:"#cde2dd",margin:"auto"}}>
                 <h1 style={{padding:"20px"}}>Buy Online Pick Up in Store</h1>
-                <a href="">Learn More</a>
+                <a style={{marginBottom:"20px"}} href="">Learn More</a>
             </div>
 
             <div style={Classname1}>
                 <div>
                     <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EBContent/230131_hp_mrk3box_flyline_V1?$jpg12$&scl=1" alt="" />
-                    <h1>Bc flyline adaptive skiset skill</h1>
+                    <h1 style={{fontSize:"18px"}}>Bc flyline adaptive skiset skill</h1>
                     <p>Designing technical gear and apparel for all adventure seekers is a pledge we take seriously, and that’s why we worked with Eddie Bauer guide & professional sit-ski athlete Trevor Kennison to build a one-of-a-kind kit that would make the slopes more accessible for adaptive skiers. We’re proud to announce that this amazing gear won Product of the year at the 4th annual Outdoor Retailer Innovation Awards.</p>
                     <a href=''>Learn More</a>
                 </div>
                 <div>
                     <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EBContent/230131_hp_mrk3box_high-fives_V1?$jpg12$&scl=1" alt="" />
-                    <h1>Bc flyline adaptive skiset skill</h1>
+                    <h1 style={{fontSize:"18px"}}>Bc flyline adaptive skiset skill</h1>
                     <p>Designing technical gear and apparel for all adventure seekers is a pledge we take seriously, and that’s why we worked with Eddie Bauer guide & professional sit-ski athlete Trevor Kennison to build a one-of-a-kind kit that would make the slopes more accessible for adaptive skiers. We’re proud to announce that this amazing gear won Product of the year at the 4th annual Outdoor Retailer Innovation Awards.</p>
                     <a href=''>Learn More</a>
                 </div>
                 <div>
                     <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EBContent/221227_hp_mrkt3box_TT_V1?$jpg12$&scl=1" alt="" />
-                    <h1>Bc flyline adaptive skiset skill</h1>
+                    <h1 style={{fontSize:"18px"}}>Bc flyline adaptive skiset skill</h1>
                     <p>Designing technical gear and apparel for all adventure seekers is a pledge we take seriously, and that’s why we worked with Eddie Bauer guide & professional sit-ski athlete Trevor Kennison to build a one-of-a-kind kit that would make the slopes more accessible for adaptive skiers. We’re proud to announce that this amazing gear won Product of the year at the 4th annual Outdoor Retailer Innovation Awards.</p>
                     <a href=''>Learn More</a>
                 </div>
             </div>
-
-            <div style={{width:"60%",margin:"auto"}}>
-                <h1 style={{display:"flex",textAlign:"center"}}>SHOP NOW PAY LATER <span style={{marginLeft:"10px",paddingLeft:"20px",paddingRight:"20px",borderRadius:"10px",fontSize:"30px",backgroundColor:"#ffbdcf"}}>Klarna</span><a style={{marginLeft:"10px"}} href="">Learn more</a></h1>
+            <div style={{width:"100%",marginTop:"30px"}}>
+            <div style={{width:"30%",margin:"auto"}}>
+                <h1 style={{display:"flex",textAlign:"center",fontSize:"15px"}}>SHOP NOW PAY LATER <span style={{paddingLeft:"20px",paddingRight:"20px",borderRadius:"10px",textAlign:"center",justifyContent:"center",fontSize:"15px",backgroundColor:"#ffbdcf"}}>Klarna</span><a style={{marginLeft:"10px"}} href="">Learn more</a></h1>
             </div>
-            <div>
-                <h1 style={{textAlign:"center"}}>
+            </div>
+           
+            <div style={{height:"50px"}}>
+                <h1 style={{textAlign:"center",fontSize:"15px"}}>
                     Best Sellers
                 </h1>
             </div>
@@ -114,31 +128,32 @@ const Homepage = () => {
 
 
             <div style={Classname2}>
-                <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0095604_035C1?$328V1$" alt="" />
+                <div >
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0095604_035C1?$328V1$" alt="" />
                     <h4>Women's Favorite Long-Sleeve Crewneck T-Shirt</h4>
-                    <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                    <p style={Classname1_Heading }>$230.00-$235.00 </p><p style={{fontWeight:"900",fontFamily:"sans-serif",color:"red"}}> $123.99</p>
                 </div>
                 <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0097303_835C1?$328V1$" alt="" />
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0097303_835C1?$328V1$" alt="" />
                       <h4>Women's Favorite Short-Sleeve Crewneck T-Shirt</h4>
-                      <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                      <p style={Classname1_Heading }>$30.00-$35.00 </p><p style={{fontWeight:"900",fontFamily:"sans-serif",color:"red"}}> $12.99</p>
                 </div>
                 <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0332534_325C1?$328V1$" alt="" />
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0332534_325C1?$328V1$" alt="" />
                       <h4>Women's Favorite Long-Sleeve Crewneck T-Shirt</h4>
-                      <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                      <p>$70.00-$85.00</p>
                 </div>
                 <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0311902_045C1?$328V1$" alt="" />
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0311902_045C1?$328V1$" alt="" />
                       <h4>Women's Favorite Short-Sleeve Crewneck T-Shirt</h4>
-                      <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                      <p>$28.00-$31.00</p>
                 </div>
                 <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0097327_443C1?$328V1$" alt="" />
-                    <h4>Women's Favorite Short-Sleeve V-Neck T-Shirt</h4>
-                    <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0311902_045C1?$328V1$" alt="" />
+                      <h4>Women's Favorite Short-Sleeve Crewneck T-Shirt</h4>
+                      <p style={Classname1_Heading }>$130.00-$315.00 </p><p style={{fontWeight:"900",fontFamily:"sans-serif",color:"red"}}> $126.99</p>
                 </div>
+               
             </div>
 
 
@@ -146,16 +161,14 @@ const Homepage = () => {
 
 
 
+<div style={{backgroundColor:"#f5f5f5"}}>
+<Slider/>
+</div>
 
 
-
-
-
-
-
-
-
+          <Footer/>
         </div>
+       
     )
 }
 
