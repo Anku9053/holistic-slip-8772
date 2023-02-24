@@ -16,10 +16,22 @@
 /* .photos:hover{
     
 } */
+.wehave{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
 
+}
+.wehave>img{
+    width: 100%;
+}
 
 
 .photos{
     width: 100%;
     gap:"10px"
+}
+.photos:hover{
+    cursor: pointer;
+    transform: scale(1.2)
 }

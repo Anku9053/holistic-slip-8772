@@ -1,8 +1,9 @@
-import { textDecoration } from '@chakra-ui/react'
+
 import React from 'react'
 import LargeWithNewsletter from "./Footer";
 import "./Homepage.css";
 import Footer from './Footer';
+import Slider from '../Slider/Slider';
 
 const Homepage = () => {
 
@@ -45,15 +46,15 @@ const Homepage = () => {
             <h1>Homepage</h1>
             <div style={{backgroundColor:"#f5f5f5"}}>
                 <h1 style={{fontSize:"26px",margin:"auto",width:"80%",textAlign:"center"}}>We’re on a mission to inspire, enable & empower everyone to experience the outdoors & live their adventure.</h1>
-                <div>
+                <div className='wehave'>
                     <img src="https://www.bergans.com/pub_images/original/4583-14291_1.jpg?extend=copy&width=512&method=resize&type=webp&timestamp=1675684080" alt="" />
                 <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/0290703_116Q1?$748V1$" alt="" />
                 </div>
             </div>
             <div>
                 <h1>Spring Adventures Are Calling!</h1>
-                <p>
-                    Outfit yourself with tech-enhanced essentials built for superior
+                <p style={{fontWeight:"600",fontSize:"15px", textAlign:"center"}}>
+                    Outfit yourself with tech-enhanced essentials built for superior <br />
                     performance in unpredictable conditions.</p>
             </div>
             <div style={Classname1}>
@@ -87,37 +88,39 @@ const Homepage = () => {
             </div>
 
 
-            <div style={{width:"60%",backgroundColor:"#cde2dd",margin:"auto"}}>
+            <div style={{width:"100%",backgroundColor:"#cde2dd",margin:"auto"}}>
                 <h1 style={{padding:"20px"}}>Buy Online Pick Up in Store</h1>
-                <a href="">Learn More</a>
+                <a style={{marginBottom:"20px"}} href="">Learn More</a>
             </div>
 
             <div style={Classname1}>
                 <div>
                     <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EBContent/230131_hp_mrk3box_flyline_V1?$jpg12$&scl=1" alt="" />
-                    <h1>Bc flyline adaptive skiset skill</h1>
+                    <h1 style={{fontSize:"18px"}}>Bc flyline adaptive skiset skill</h1>
                     <p>Designing technical gear and apparel for all adventure seekers is a pledge we take seriously, and that’s why we worked with Eddie Bauer guide & professional sit-ski athlete Trevor Kennison to build a one-of-a-kind kit that would make the slopes more accessible for adaptive skiers. We’re proud to announce that this amazing gear won Product of the year at the 4th annual Outdoor Retailer Innovation Awards.</p>
                     <a href=''>Learn More</a>
                 </div>
                 <div>
                     <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EBContent/230131_hp_mrk3box_high-fives_V1?$jpg12$&scl=1" alt="" />
-                    <h1>Bc flyline adaptive skiset skill</h1>
+                    <h1 style={{fontSize:"18px"}}>Bc flyline adaptive skiset skill</h1>
                     <p>Designing technical gear and apparel for all adventure seekers is a pledge we take seriously, and that’s why we worked with Eddie Bauer guide & professional sit-ski athlete Trevor Kennison to build a one-of-a-kind kit that would make the slopes more accessible for adaptive skiers. We’re proud to announce that this amazing gear won Product of the year at the 4th annual Outdoor Retailer Innovation Awards.</p>
                     <a href=''>Learn More</a>
                 </div>
                 <div>
                     <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EBContent/221227_hp_mrkt3box_TT_V1?$jpg12$&scl=1" alt="" />
-                    <h1>Bc flyline adaptive skiset skill</h1>
+                    <h1 style={{fontSize:"18px"}}>Bc flyline adaptive skiset skill</h1>
                     <p>Designing technical gear and apparel for all adventure seekers is a pledge we take seriously, and that’s why we worked with Eddie Bauer guide & professional sit-ski athlete Trevor Kennison to build a one-of-a-kind kit that would make the slopes more accessible for adaptive skiers. We’re proud to announce that this amazing gear won Product of the year at the 4th annual Outdoor Retailer Innovation Awards.</p>
                     <a href=''>Learn More</a>
                 </div>
             </div>
-
-            <div style={{width:"60%",margin:"auto"}}>
-                <h1 style={{display:"flex",textAlign:"center"}}>SHOP NOW PAY LATER <span style={{marginLeft:"10px",paddingLeft:"20px",paddingRight:"20px",borderRadius:"10px",fontSize:"30px",backgroundColor:"#ffbdcf"}}>Klarna</span><a style={{marginLeft:"10px"}} href="">Learn more</a></h1>
+            <div style={{width:"100%",marginTop:"30px"}}>
+            <div style={{width:"30%",margin:"auto"}}>
+                <h1 style={{display:"flex",textAlign:"center",fontSize:"15px"}}>SHOP NOW PAY LATER <span style={{paddingLeft:"20px",paddingRight:"20px",borderRadius:"10px",textAlign:"center",justifyContent:"center",fontSize:"15px",backgroundColor:"#ffbdcf"}}>Klarna</span><a style={{marginLeft:"10px"}} href="">Learn more</a></h1>
             </div>
-            <div>
-                <h1 style={{textAlign:"center"}}>
+            </div>
+           
+            <div style={{height:"50px"}}>
+                <h1 style={{textAlign:"center",fontSize:"15px"}}>
                     Best Sellers
                 </h1>
             </div>
@@ -158,7 +161,9 @@ const Homepage = () => {
 
 
 
-
+<div style={{backgroundColor:"#f5f5f5"}}>
+<Slider/>
+</div>
 
 
           <Footer/>

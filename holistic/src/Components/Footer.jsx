@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Footer.css";
-import { IconName } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -99,7 +99,7 @@ const Footer = () => {
 
                 <div>
                     <h4>BE THE FIRST TO KNOW</h4>
-                    <p>Earn rewards and be the first to hear about sales <br />and special offers.</p>
+                    <p1>Earn rewards and be the first to hear about sales <br />and special offers.</p1>
                    <button className='BUTTON'>SIGN UP</button>
 
                 </div>
