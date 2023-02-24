@@ -1,5 +1,8 @@
 import { textDecoration } from '@chakra-ui/react'
 import React from 'react'
+import LargeWithNewsletter from "./Footer";
+import "./Homepage.css";
+import Footer from './Footer';
 
 const Homepage = () => {
 
@@ -18,7 +21,7 @@ const Homepage = () => {
         gridTemplateColumns: 'repeat(5,1fr)',
         gap:"20px",
         padding:"10px",
-        width: "90%",
+        width: "95%",
         margin:"auto"
     }
 
@@ -26,6 +29,10 @@ const Homepage = () => {
       
         width: "100%",
         gap:"10px"
+    }
+    const Classname1_Heading = {
+        textDecorationLine: 'line-through', 
+        textDecorationStyle: 'solid'
     }
    
 
@@ -36,8 +43,12 @@ const Homepage = () => {
     return (
         <div>
             <h1>Homepage</h1>
-            <div>
-                <h1>We’re on a mission to inspire, enable & empower everyone to experience the outdoors & live their adventure.</h1>
+            <div style={{backgroundColor:"#f5f5f5"}}>
+                <h1 style={{fontSize:"26px",margin:"auto",width:"80%",textAlign:"center"}}>We’re on a mission to inspire, enable & empower everyone to experience the outdoors & live their adventure.</h1>
+                <div>
+                    <img src="https://www.bergans.com/pub_images/original/4583-14291_1.jpg?extend=copy&width=512&method=resize&type=webp&timestamp=1675684080" alt="" />
+                <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/0290703_116Q1?$748V1$" alt="" />
+                </div>
             </div>
             <div>
                 <h1>Spring Adventures Are Calling!</h1>
@@ -67,10 +78,10 @@ const Homepage = () => {
             <div style={{width:"80%",margin:"auto"}}>
                 <h1 style={{fontSize:"80px",textAlign:"center"}}>SALE <span style={{fontSize:"80px"}}>|</span> UPTO 40%</h1>
                <div >
-                <button style={{marginLeft:"40px",backgroundColor:"black",fontSize:"20px",color:"white",width:"180px",height:"40px"}}>Shop Women</button>
-                <button style={{marginLeft:"40px",backgroundColor:"black",fontSize:"20px",color:"white",width:"180px",height:"40px"}}>Shop Men</button>
-                <button style={{marginLeft:"40px",backgroundColor:"black",fontSize:"20px",color:"white",width:"180px",height:"40px"}}>Shop Kid</button>
-                <button style={{marginLeft:"40px",backgroundColor:"black",fontSize:"20px",color:"white",width:"180px",height:"40px"}}>Shop Houses</button>
+                <button className='example'>Shop Women</button>
+                <button className='example'>Shop Men</button>
+                <button className='example'>Shop Kid</button>
+                <button className='example'>Shop Houses</button>
                </div>
                
             </div>
@@ -114,31 +125,32 @@ const Homepage = () => {
 
 
             <div style={Classname2}>
-                <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0095604_035C1?$328V1$" alt="" />
+                <div >
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0095604_035C1?$328V1$" alt="" />
                     <h4>Women's Favorite Long-Sleeve Crewneck T-Shirt</h4>
-                    <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                    <p style={Classname1_Heading }>$230.00-$235.00 </p><p style={{fontWeight:"900",fontFamily:"sans-serif",color:"red"}}> $123.99</p>
                 </div>
                 <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0097303_835C1?$328V1$" alt="" />
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0097303_835C1?$328V1$" alt="" />
                       <h4>Women's Favorite Short-Sleeve Crewneck T-Shirt</h4>
-                      <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                      <p style={Classname1_Heading }>$30.00-$35.00 </p><p style={{fontWeight:"900",fontFamily:"sans-serif",color:"red"}}> $12.99</p>
                 </div>
                 <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0332534_325C1?$328V1$" alt="" />
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0332534_325C1?$328V1$" alt="" />
                       <h4>Women's Favorite Long-Sleeve Crewneck T-Shirt</h4>
-                      <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                      <p>$70.00-$85.00</p>
                 </div>
                 <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0311902_045C1?$328V1$" alt="" />
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0311902_045C1?$328V1$" alt="" />
                       <h4>Women's Favorite Short-Sleeve Crewneck T-Shirt</h4>
-                      <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                      <p>$28.00-$31.00</p>
                 </div>
                 <div>
-                    <img style={Classname1_img} src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0097327_443C1?$328V1$" alt="" />
-                    <h4>Women's Favorite Short-Sleeve V-Neck T-Shirt</h4>
-                    <p>$30.00-$35.00 </p><p> Sale Price$23.99</p>
+                    <img className='photos' src="https://eddiebauer.scene7.com/is/image/EddieBauer/D0311902_045C1?$328V1$" alt="" />
+                      <h4>Women's Favorite Short-Sleeve Crewneck T-Shirt</h4>
+                      <p style={Classname1_Heading }>$130.00-$315.00 </p><p style={{fontWeight:"900",fontFamily:"sans-serif",color:"red"}}> $126.99</p>
                 </div>
+               
             </div>
 
 
@@ -149,13 +161,9 @@ const Homepage = () => {
 
 
 
-
-
-
-
-
-
+          <Footer/>
         </div>
+       
     )
 }
 
