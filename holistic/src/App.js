@@ -5,13 +5,15 @@ import Footer from './Components/Footer';
 import Homepage from './Components/Homepage';
 import Slider from "./Slider/Slider";
 import Checkout from './Components/Checkout';
+import Cities from './Cities.jsx/Cities';
 
 
 function App() {
   return (
     
     <div className="App">
-   <Homepage/>
+   {/* <Homepage/> */}
+   <Cities/>
    {/* <Checkout/> */}
    {/* <Slider/> */}
    {/* <Footer/> */}
