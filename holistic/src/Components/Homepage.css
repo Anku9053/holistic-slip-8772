@@ -19,7 +19,7 @@
 .wehave{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    
+    margin-top: 30px;
 
 }
 .wehave>img{
@@ -33,5 +33,6 @@
 }
 .photos:hover{
     cursor: pointer;
-    transform: scale(1.2)
+    transform: scale(1.2);
+   
 }

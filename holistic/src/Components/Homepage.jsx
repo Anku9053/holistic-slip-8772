@@ -43,9 +43,11 @@ const Homepage = () => {
 
     return (
         <div>
-            <h1>Homepage</h1>
-            <div style={{backgroundColor:"#f5f5f5"}}>
-                <h1 style={{fontSize:"26px",margin:"auto",width:"80%",textAlign:"center"}}>We’re on a mission to inspire, enable & empower everyone to experience the outdoors & live their adventure.</h1>
+           <div>
+            <img style={{width:"100%",height:"500px"}} src="https://assets.hardwarezone.com/img/2017/12/soundlinkMicro-snow.jpg" alt="" />
+           </div>
+            <div style={{marginTop:"60px",backgroundColor:"#f5f5f5"}}>
+                <h1 style={{fontStyle:"sans-serif Verdana, Geneva, Tahoma, sans-serif",fontSize:"26px",margin:"auto",width:"80%",textAlign:"center"}}>We’re on a mission to inspire, enable & empower everyone to experience the outdoors & live their adventure.</h1>
                 <div className='wehave'>
                     <img src="https://www.bergans.com/pub_images/original/4583-14291_1.jpg?extend=copy&width=512&method=resize&type=webp&timestamp=1675684080" alt="" />
                 <img src="https://eddiebauer.scene7.com/is/image/EddieBauer/0290703_116Q1?$748V1$" alt="" />
