@@ -2,8 +2,11 @@
 import React from 'react'
 import LargeWithNewsletter from "./Footer";
 import "./Homepage.css";
+import "./Navbar.css"
 import Footer from './Footer';
 import Slider from '../Slider/Slider';
+import { Navbar } from '../Cities/Navbar';
+
 
 const Homepage = () => {
 
@@ -43,6 +46,10 @@ const Homepage = () => {
 
     return (
         <div>
+            <div>
+            <Navbar/>
+            </div>
+            
            <div>
             <img style={{width:"100%",height:"500px"}} src="https://assets.hardwarezone.com/img/2017/12/soundlinkMicro-snow.jpg" alt="" />
            </div>
