@@ -19,11 +19,11 @@ export const addcity = (data = { title: "", image: "", brand: "",description:"",
   });
 };
 
-// export const deletecity = (id) => {
-//   return axios({
-//     method: "delete",
-//     url: `http://localhost:3000/products/${id}`
-//   });
-// };
+export const deletecity = (id) => {
+  return axios({
+    method: "delete",
+    url: `http://localhost:3000/products/${id}`
+  });
+};
 
 export default getData;
