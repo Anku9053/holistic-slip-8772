@@ -111,9 +111,9 @@ function Cities() {
 
     <div >
       <Navbar/>
-      <div className="dropdown">
-            <button className="dropbtn">Dropdown</button>
-            <div className="dropdown-content">
+      <div className="dropdown1">
+            <button className="dropbtn1">Dropdown</button>
+            <div className="dropdown-content1">
               <a href="#">Mens Clothes</a>
               <a href="#">Mens Goggles</a>
               <a href="#">Mens Lens</a>
@@ -161,15 +161,18 @@ function Cities() {
         </div>
       </div>
       <div style={{ marginTop: "50px", width: "100%", textAlign: "center" }}>
-        <button style={{ marginRight: "40px", textAlign: "center", width: "150px", height: "30px", color: "black", fontFamily: "sans-serif", backgroundColor: "aqua", fontWeight: "600", borderRadius: "10px" }} disabled={page <= 1} onClick={() => handlepage(-1)}>
+        <button style={{ marginRight: "10px", textAlign: "center", width: "150px", height: "30px", color: "white", fontFamily: "sans-serif", backgroundColor: "black", fontWeight: "600" }} disabled={page <= 1} onClick={() => handlepage(-1)}>
           Previous Page
         </button>
-        <button style={{ marginRight: "40px", color: "white", backgroundColor: "black", textAlign: "center", height: "30px", fontWeight: "600", borderRadius: "10px" }}>{page}</button>
-        <button style={{ marginRight: "40px", color: "white", backgroundColor: "black", textAlign: "center", height: "30px", fontWeight: "600", borderRadius: "10px" }}>{page + 1}</button>
-        <button style={{ marginRight: "40px", textAlign: "center", width: "150px", height: "30px", color: "black", fontFamily: "sans-serif", backgroundColor: "aqua", fontWeight: "600", borderRadius: "10px" }} disabled={page === total} onClick={() => handlepage(1)}>
+        <button style={{ marginRight: "10px", color: "white", backgroundColor: "black", textAlign: "center", height: "30px", fontWeight: "600", borderRadius: "10px" }}>{page}</button>
+        <button style={{ marginRight: "10px", color: "white", backgroundColor: "black", textAlign: "center", height: "30px", fontWeight: "600", borderRadius: "10px" }}>{page + 1}</button>
+        <button style={{ marginRight: "10px", textAlign: "center", width: "150px", height: "30px", color: "white", fontFamily: "sans-serif", backgroundColor: "black", fontWeight: "600"}} disabled={page === total} onClick={() => handlepage(1)}>
           Next Page
         </button>
       </div>
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />

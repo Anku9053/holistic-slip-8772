@@ -21,7 +21,7 @@ const Cityitem = ({ title,image, id, brand,category, price, handledeletecity }) 
         {/* <Link to={`/products/${id}`} >Watch More</Link> */}
         {/* <Link to={`/products/${id}`}>Watch more</Link> */}
         {/* <a href="ProductDetails">Watchmore</a> */}
-        <button onClick={()=>navigate(`/checkout`)}>Add to cart</button>
+        <button style={{color:"white",backgroundColor:"black"}} onClick={()=>navigate(`/checkout`)}>Add to cart</button>
         {/* <button onClick={() => navigate(`/`)}>Go to Home page</button> */}
 
 

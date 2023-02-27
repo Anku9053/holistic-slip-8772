@@ -1,9 +1,12 @@
 import React from 'react';
 import './Checkout.css';
 //bootstrap
+// import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Footer';
+import { Navbar } from '../Cities/Navbar';
+
 class Checkout extends React.Component {
- 
  
   render() {
   
@@ -11,6 +14,10 @@ class Checkout extends React.Component {
     return (
     
       <div className="maincontainer">
+        <div>
+        <Navbar/>
+        </div>
+        
        <div  class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
           {/* <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5> */}
           <img className='logo' src="https://logos-world.net/wp-content/uploads/2022/04/Eddie-Bauer-Logo.png" alt="" />
@@ -233,7 +240,7 @@ class Checkout extends React.Component {
                   </div>
                 </div>
                 <hr class="mb-4" />
-                <button class="btn btn-primary btn-lg btn-block" type="button">Continue to checkout</button>
+               <button onClick={()=>alert("Thankyou for shop with us")} class="btn btn-primary btn-lg btn-block" type="button">Continue to checkout</button>
               </form>
             </div>
           </div>
@@ -246,7 +253,7 @@ class Checkout extends React.Component {
             </ul>
           </footer>
         </div>
-     
+        <Footer/>
       </div>
       
 )

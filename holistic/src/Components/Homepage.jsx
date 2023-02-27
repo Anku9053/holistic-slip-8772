@@ -2,7 +2,7 @@
 import React from 'react'
 import LargeWithNewsletter from "./Footer";
 import "./Homepage.css";
-import "./Navbar.css"
+// import "./Navbar.css"
 import Footer from './Footer';
 import Slider from '../Slider/Slider';
 import { Navbar } from '../Cities/Navbar';
